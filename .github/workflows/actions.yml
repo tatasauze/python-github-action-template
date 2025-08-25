@@ -2,8 +2,8 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 0 * * 1' # At 00:00 on Monday
-  workflow_dispatch:
+    - cron: '0 0 * * 1' # 星期一 00:00 執行
+  workflow_dispatch: # 新增這行以啟用手動觸發
 
 jobs:
   build:
